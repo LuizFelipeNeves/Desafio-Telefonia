@@ -13,7 +13,7 @@ const swaggerDefinition = {
 // options for the swagger docs
 const options = {
   swaggerDefinition,
-  apis: ['./src/API/routes/*.js', './src/API/configs/express.js'],
+  apis: ['./src/API/*.js'],
 };
 
 // initialize swagger-jsdoc
