@@ -5,6 +5,7 @@ import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 
+import docsRoutes from '../routes/docs.route';
 import logger from './logger';
 
 /**
@@ -28,5 +29,20 @@ app.use(helmet());
 
 // enable CORS - Cross Origin Resource Sharing
 app.use(cors());
+
+/**
+ * @swagger
+ * path:
+ *  /status:
+ *    get:
+ *      summary: Get status of application
+ *      tags: [Status]
+ *      responses:
+ *        "200":
+ *          description: Ok
+ */
+app.get('/status', (req, res) => res.send('OK'));
+
+app.use('/docs', docsRoutes);
 
 export default app;
