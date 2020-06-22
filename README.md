@@ -20,6 +20,8 @@ Boilerplate/Starter Project for building RESTful APIs and microservices using No
 
 ## Todo API
 
+- Add docs in new routes: planos, taxas, simulacao.
+- Migrate to Mongodb Models and Create crud to Models.
 - [Docker](https://www.docker.com/) support
 - Express + MongoDB ([Mongoose](http://mongoosejs.com/))
 - Request validation with [joi](https://github.com/hapijs/joi)
