@@ -104,3 +104,4 @@ dist
 .tern-port
 trash.text
 yarn.lock
+package-lock.json
